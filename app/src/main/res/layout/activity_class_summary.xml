@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassSummaryActivity"
+    android:background="#59a65a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#59a65a">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class Summary"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="#fafcfa"
+            android:layout_marginTop="10dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="8dp">
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=": Rifa Tasnim Orin"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="19sp"
+                    android:layout_marginLeft="8dp"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:text="ID"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppinsbold" />
+
+                <TextView
+                    android:padding="4dp"
+                    android:text=": 2020-1-60-103"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppinsbold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:paddingTop="3dp"
+                    android:text="Course"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/poppinsbold" />
+                <TextView
+                    android:id="@+id/course"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsbold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:padding="6dp" />
+
+
+
+            </TableRow>
+
+
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:text="Type"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:paddingTop="4dp"/>
+
+                <RadioGroup
+                    android:id="@+id/typeRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/theory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Theory"
+                        android:textSize="19sp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/poppinsbold" />
+
+                    <RadioButton
+                        android:id="@+id/lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lab"
+                        android:textSize="19sp"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/poppinsbold" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppinsbold" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/activity_class_textbox"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:padding="6dp"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:text="Lecture  "
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppinsbold" />
+
+                <EditText
+                    android:id="@+id/lecture"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/activity_class_textbox"
+                    android:hint="Enter Lecture Number"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:inputType="text"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:padding="6dp" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="8dp">
+
+                <TextView
+                    android:text="Topic"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppinsbold" />
+
+                <EditText
+                    android:id="@+id/topic"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/activity_class_textbox"
+                    android:hint="Enter Topic Title"
+                    android:inputType="text"
+                    android:textSize="19sp"
+                    android:layout_marginStart="8dp"
+                    android:padding="6dp"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+            </TableRow>
+
+            <TextView
+                android:text="Summary of the Lecture"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_marginTop="8dp"/>
+            <EditText
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sum_lec"
+                android:inputType="textMultiLine"
+                android:background="@drawable/activity_class_textbox"
+                android:layout_marginTop="8dp"
+                android:textSize="19sp"
+                android:layout_marginStart="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="50dp"
+                android:cursorVisible="true"
+                android:fontFamily="@font/poppinsmedium"/>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#59a65a">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:fontFamily="@font/poppinsbold"
+                android:backgroundTint="#59a65a"
+                android:textColor="#fafcfa"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="8dp">
+
+            </Button>
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:fontFamily="@font/poppinsbold"
+                android:backgroundTint="#59a65a"
+                android:textColor="#fafcfa"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="8dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

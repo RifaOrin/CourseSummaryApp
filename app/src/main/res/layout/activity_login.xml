@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#59a65a">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#fcfcfa"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinsbold">
+
+        </TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="8dp"
+            android:padding="8dp">
+            <TableRow>
+                <TextView
+                    android:text="User ID"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:text=":"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/black">
+                </TextView>
+                <EditText
+                    android:id="@+id/etUserId"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="text">
+
+                </EditText>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Password"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:text=":"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textColor="@color/black">
+                </TextView>
+                <EditText
+                    android:id="@+id/etPW"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberPassword">
+
+                </EditText>
+            </TableRow>
+            <CheckBox
+                android:id="@+id/cbRemUserId"
+                android:text="Remember User ID"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbRemPass"
+                android:text="Remember User Password"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="20sp">
+
+                </TextView>
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Signup"
+                    android:textColor="#59a65a"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppinsbold"
+                    android:textSize="15sp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#59a65a">
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exit"
+                android:fontFamily="@font/poppinsbold"
+                android:backgroundTint="#59a65a"
+                android:textColor="#fafcfa"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="8dp">
+
+            </Button>
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="|"
+                android:textSize="24sp"
+                android:textColor="#fcfcfa"
+                android:gravity="center">
+
+            </TextView>
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Go"
+                android:fontFamily="@font/poppinsbold"
+                android:backgroundTint="#59a65a"
+                android:textColor="#fafcfa"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="8dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
